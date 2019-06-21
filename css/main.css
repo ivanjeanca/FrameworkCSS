@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Montserrat:100,200,300,400,600,700|Raleway:100,200,300,400,600,700|Source+Serif+Pro:400,600,700|Swanky+and+Moo+Moo|Roboto+Mono:100,300,500,700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+    margin: 10px 0px;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+h4{
+  font-size: 30px;
+}
+
+h5{
+    font-size: 25px;
+}
+
+p, label {
+    margin: 5px 0px;
+    font-size: 20px;
+}
+
+input[type=text], input[type=number], select, textarea {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 0px 20px 0px;
+    padding: 5px 0px 5px 3px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.fondo-verde{
+    background-color: rgba(7, 165, 15, 0.089);
+}
+
+.form-verde input[type=number],
+.form-verde input[type=text],
+.form-verde select,
+.form-verde textarea {
+    background-color: rgba(7, 165, 15, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.fondo-azul{
+    background-color: rgba(0, 129, 204, 0.089);
+}
+
+.form-azul input[type=number],
+.form-azul input[type=text],
+.form-azul select,
+.form-azul textarea {
+    background-color: rgba(0, 129, 204, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.fondo-rojo{
+    background-color: rgba(211, 0, 0, 0.089);
+}
+
+.form-rojo input[type=number],
+.form-rojo input[type=text],
+.form-rojo select,
+.form-rojo textarea {
+    background-color: rgba(211, 0, 0, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.fondo-amarillo{
+    background-color: rgba(245, 188, 0, 0.089);
+}
+
+.form-amarillo input[type=number],
+.form-amarillo input[type=text],
+.form-amarillo select,
+.form-amarillo textarea {
+    background-color: rgba(245, 188, 0, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.fondo-morado{
+    background-color: rgba(116, 0, 136, 0.089);
+}
+
+.form-morado input[type=number],
+.form-morado input[type=text],
+.form-morado select,
+.form-morado textarea {
+    background-color: rgba(116, 0, 136, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.fondo-naranja{
+    background-color: rgba(236, 114, 0, 0.089);
+}
+
+.form-naranja input[type=number],
+.form-naranja input[type=text],
+.form-naranja select,
+.form-naranja textarea {
+    background-color: rgba(236, 114, 0, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.fondo-rosa{
+    background-color: rgba(255, 183, 243, 0.089);
+}
+
+.form-rosa input[type=number],
+.form-rosa input[type=text],
+.form-rosa select,
+.form-rosa textarea {
+    background-color: rgba(255, 183, 243, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.fondo-verde-claro{
+    background-color: rgba(91, 194, 6, 0.089);
+}
+
+.form-verde-claro input[type=number],
+.form-verde-claro input[type=text],
+.form-verde-claro select,
+.form-verde-claro textarea {
+    background-color: rgba(91, 194, 6, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/*
+    Check Box
+*/
+
+input[type=checkbox] + label {
+    display: block;
+    font-size: 17px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 0px 4px 8px 3px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: transparent;
+    transition: 380ms;
+}
+
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
+
+input[type=checkbox]:checked + .check-verde-claro:before{
+    background-color: rgb(91, 194, 6);
+    color: black;
+}
+
+input[type=checkbox]:checked + .check-verde:before{
+    background-color: rgb(7, 165, 15);
+    color: black;
+}
+
+input[type=checkbox]:checked + .check-azul:before{
+    background-color: rgb(0, 129, 204);
+    color: black;
+}
+
+input[type=checkbox]:checked + .check-azul-oscuro:before{
+    background-color: rgb(4, 5, 98);
+    color: white;
+}
+
+input[type=checkbox]:checked + .check-rojo:before{
+    background-color: rgb(211, 0, 0);
+    color: white;
+}
+
+input[type=checkbox]:checked + .check-rojo-oscuro:before{
+    background-color: rgb(110, 0, 0);
+    color: white;
+}
+
+input[type=checkbox]:checked + .check-amarillo:before{
+    background-color: rgb(245, 188, 0);
+    color: black;
+}
+
+input[type=checkbox]:checked + .check-negro:before{
+    background-color: rgb(0, 0, 0);
+    color: rgb(187, 187, 187);
+}
+
+input[type=checkbox]:checked + .check-rosa:before{
+    background-color: rgb(255, 183, 243);
+    color: rgb(0, 0, 0);
+}
+
+input[type=checkbox]:checked + .check-blanco:before{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+input[type=checkbox]:checked + .check-morado:before{
+    background-color: rgb(116, 0, 136);
+    color: white;
+}
+
+input[type=checkbox]:checked + .check-naranja:before{
+    background-color: rgb(236, 114, 0);
+    color: black;
+}
+
+input[type=checkbox]:disabled + label:before,
+input[type=checkbox]:disabled + .check-verde:before,
+input[type=checkbox]:disabled + .check-verde-claro:before,
+input[type=checkbox]:disabled + .check-azul:before,
+input[type=checkbox]:disabled + .check-azul-oscuro:before,
+input[type=checkbox]:disabled + .check-amarillo:before,
+input[type=checkbox]:disabled + .check-negro:before,
+input[type=checkbox]:disabled + .check-rosa:before,
+input[type=checkbox]:disabled + .check-blanco:before,
+input[type=checkbox]:disabled + .check-morado:before,
+input[type=checkbox]:disabled + .check-naranja:before {
+    transform: scale(1);
+    background-color: rgb(173, 173, 173);
+    color: transparent;
+}
+
+input[type=checkbox]:checked:disabled + label:before,
+input[type=checkbox]:checked:disabled + .check-verde:before,
+input[type=checkbox]:checked:disabled + .check-verde-claro:before,
+input[type=checkbox]:checked:disabled + .check-azul:before,
+input[type=checkbox]:checked:disabled + .check-azul-oscuro:before,
+input[type=checkbox]:checked:disabled + .check-amarillo:before,
+input[type=checkbox]:checked:disabled + .check-negro:before,
+input[type=checkbox]:checked:disabled + .check-rosa:before,
+input[type=checkbox]:checked:disabled + .check-blanco:before,
+input[type=checkbox]:checked:disabled + .check-morado:before,
+input[type=checkbox]:checked:disabled + .check-naranja:before {
+    color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+input[type=checkbox]:checked:disabled ~ label, input[type=checkbox]:disabled ~ label{
+    color: rgba(0, 0, 0, 0.4);
+} 
+
+/*
+    Radio Button
+*/
+
+input[type=radio] + label {
+    display: block;
+    font-size: 17px;
+    line-height: 10px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio] + label:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-top: 5px;
+    margin-right: 5px;
+    transition: 380ms;
+}
+
+input[type=radio] + label:active:before {
+    transform: scale(0);
+}
+
+input[type=radio]:checked + label:before {
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
+
+input[type=radio]:checked + .radio-verde-claro:before{
+    background-color: rgb(91, 194, 6);
+    color: black;
+}
+
+input[type=radio]:checked + .radio-verde:before{
+    background-color: rgb(7, 165, 15);
+    color: black;
+}
+
+input[type=radio]:checked + .radio-azul:before{
+    background-color: rgb(0, 129, 204);
+    color: black;
+}
+
+input[type=radio]:checked + .radio-azul-oscuro:before{
+    background-color: rgb(4, 5, 98);
+    color: white;
+}
+
+input[type=radio]:checked + .radio-rojo:before{
+    background-color: rgb(211, 0, 0);
+    color: white;
+}
+
+input[type=radio]:checked + .radio-rojo-oscuro:before{
+    background-color: rgb(110, 0, 0);
+    color: white;
+}
+
+input[type=radio]:checked + .radio-amarillo:before{
+    background-color: rgb(245, 188, 0);
+    color: black;
+}
+
+input[type=radio]:checked + .radio-negro:before{
+    background-color: rgb(0, 0, 0);
+    color: rgb(187, 187, 187);
+}
+
+input[type=radio]:checked + .radio-rosa:before{
+    background-color: rgb(255, 183, 243);
+    color: rgb(0, 0, 0);
+}
+
+input[type=radio]:checked + .radio-blanco:before{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+input[type=radio]:checked + .radio-morado:before{
+    background-color: rgb(116, 0, 136);
+    color: white;
+}
+
+input[type=radio]:checked + .radio-naranja:before{
+    background-color: rgb(236, 114, 0);
+    color: black;
+}
+
+input[type=radio]:disabled + label:before,
+input[type=radio]:disabled + .radio-verde:before,
+input[type=radio]:disabled + .radio-verde-claro:before,
+input[type=radio]:disabled + .radio-azul:before,
+input[type=radio]:disabled + .radio-azul-oscuro:before,
+input[type=radio]:disabled + .radio-amarillo:before,
+input[type=radio]:disabled + .radio-negro:before,
+input[type=radio]:disabled + .radio-rosa:before,
+input[type=radio]:disabled + .radio-blanco:before,
+input[type=radio]:disabled + .radio-morado:before,
+input[type=radio]:disabled + .radio-naranja:before {
+    transform: scale(1);
+    background-color: rgb(207, 207, 207);
+    color: transparent;
+}
+
+input[type=radio]:checked:disabled + label:before,
+input[type=radio]:checked:disabled + .radio-verde:before,
+input[type=radio]:checked:disabled + .radio-verde-claro:before,
+input[type=radio]:checked:disabled + .radio-azul:before,
+input[type=radio]:checked:disabled + .radio-azul-oscuro:before,
+input[type=radio]:checked:disabled + .radio-amarillo:before,
+input[type=radio]:checked:disabled + .radio-negro:before,
+input[type=radio]:checked:disabled + .radio-rosa:before,
+input[type=radio]:checked:disabled + .radio-blanco:before,
+input[type=radio]:checked:disabled + .radio-morado:before,
+input[type=radio]:checked:disabled + .radio-naranja:before {
+    color: rgba(0, 0, 0, 0.1);
+    color: rgba(36, 36, 36, 0.4);
+}
+
+input[type=radio]:disabled ~ label{
+    color: rgba(0, 0, 0, 0.4);
+} 
+
+
+input[type=submit]{
+
+}
+
+.titulo-1{
+    font-size: 100px;
+}
+
+.titulo-2{
+    font-size: 90px;
+}
+
+.titulo-3{
+    font-size: 80px;
+}
+
+.titulo-4{
+    font-size: 70px;
+}
+
+.titulo-5{
+    font-size: 60px;
+}
+
+.btn {
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    transition: all 380ms;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.btn:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+    background-color: rgb(255, 196, 0);
+    box-shadow: 0px 20px 5px -15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-renglon{
+    width: 100%;
+}
+
+.btn-verde {
+    border: 1px solid rgb(14, 87, 17);
+    background-color: rgb(7, 165, 15);
+    color: black;
+}
+
+.btn-verde:hover {
+    background-color: rgb(0, 238, 12);
+}
+
+.btn-verde-claro {
+    border: 1px solid rgb(68, 138, 11);
+    background-color: rgb(91, 194, 6);
+    color: black;
+}
+
+.btn-verde-claro:hover {
+    background-color: rgb(111, 246, 0);
+}
+
+.btn-azul {
+    border: 1px solid rgb(0, 95, 149);
+    background-color: rgb(0, 129, 204);
+    color: black;
+}
+
+.btn-azul:hover {
+    background-color: rgb(29, 171, 253);
+}
+
+.btn-azul-oscuro {
+    font-weight: 300;
+    border: 1px solid rgb(5, 6, 71);
+    background-color: rgb(4, 5, 98);
+    color: white;
+}
+
+.btn-azul-oscuro:hover {
+    background-color: rgb(20, 23, 184);
+}
+
+.btn-rojo {
+    font-weight: 300;
+    border: 1px solid rgb(114, 0, 0);
+    background-color: rgb(211, 0, 0);
+    color: white;
+}
+
+.btn-rojo:hover {
+    font-weight: 400;
+    background-color: rgb(255, 50, 50);
+    color:black;
+}
+
+.btn-rojo-oscuro {
+    font-weight: 300;
+    border: 1px solid rgb(65, 0, 0);
+    background-color: rgb(110, 0, 0);
+    color: white;
+}
+
+.btn-rojo-oscuro:hover {
+    background-color: rgb(190, 0, 0);
+}
+
+.btn-amarillo {
+    border: 1px solid rgb(209, 160, 0);
+    background-color: rgb(245, 188, 0);
+    color: black;
+}
+
+.btn-amarillo:hover {
+    background-color: rgb(255, 213, 77);
+}
+
+.btn-negro {
+    border: 1px solid rgb(58, 58, 58);
+    background-color: rgb(0, 0, 0);
+    color: rgb(187, 187, 187);
+}
+
+.btn-negro:hover {
+    background-color: rgb(47, 47, 47);
+}
+
+.btn-rosa {
+    border: 1px solid rgb(255, 116, 220);
+    background-color: rgb(255, 183, 243);
+    color: rgb(0, 0, 0);
+}
+
+.btn-rosa:hover {
+    background-color: rgb(255, 202, 246);
+}
+
+.btn-blanco {
+    border: 1px solid rgb(116, 116, 116);
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.btn-blanco:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+.btn-morado {
+    font-weight: 300;
+    border: 1px solid rgb(80, 0, 69);
+    background-color: rgb(116, 0, 136);
+    color: white;
+}
+
+.btn-morado:hover {
+    background-color: rgb(174, 1, 197);
+}
+
+.btn-naranja {
+    border: 1px solid rgb(148, 71, 0);
+    background-color: rgb(236, 114, 0);
+    color: black;
+}
+
+.btn-naranja:hover {
+    background-color: rgb(255, 147, 58);
+}
+
+hr {
+    margin: 5px 0px;
+    padding: 0;
+    height: 1px;
+    border: none;
+    background: radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.10) 100%);
+}
+
+.cursiva{
+    font-family: 'Dancing Script', cursive;
+}
+
+.serif{
+    font-family: 'Source Serif Pro', serif;
+}
+
+.trazo{
+    font-family: 'Swanky and Moo Moo', cursive;
+}
+
+.codigo{
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.delgado{
+    font-weight: 300;
+}
+
+.extra-delgado{
+    font-weight: 200;
+}
+
+.mas-delgado{
+    font-weight: 100;
+}
+
+.negritas{
+    font-weight: 700;
+}
+
+.semi-negritas{
+    font-weight: 600;
+}
+
+.separacion-1{
+    margin: 5px 0px;
+}
+
+.separacion-2{
+    margin: 10px 0px;
+}
+
+.separacion-3{
+    margin: 15px 0px;
+}
+
+.separacion-4{
+    margin: 20px 0px;
+}
+
+.contenedor{
+    padding: 15px;
+}
+
+.contenedor-total{
+    padding: 0px;
+}
+
+.imagen{
+    width: 100%;
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+.renglon{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+}
+
+.col-1{
+    width: 8.3333333333333333333333333333333%;
+    
+}
+
+.col-2{
+    width: 16.666666666666666666666666666667%;
+    
+}
+
+.col-3{
+    width:25%;
+    
+}
+
+.col-4{
+    width:33.333333333333333333333333333333%;
+    
+}
+
+.col-5{
+    width: 41.666666666666666666666666666667%;
+    
+}
+
+.col-6{
+    width:50%;
+    
+}
+
+.col-7{
+    width: 58.333333333333333333333333333333%;
+    
+}
+
+.col-8{
+    width: 66.666666666666666666666666666667%;
+    
+}
+
+.col-9{
+    width: 75%;
+    
+}
+
+.col-10{
+    width: 83.333333333333333333333333333333%;
+    
+}
+
+.col-11{
+    width: 91.666666666666666666666666666667%;
+    
+}
+
+.col-12{
+    width: 100%;
+    
+}
+
+.contenido {
+    margin: 0px 10px;
+}
+
+@media (max-width: 575.98px) { 
+    .col-1{
+        width: 50%;
+    }
+
+    .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .col-1{
+        width: 16.666666666666666666666666666667%;
+    }
+
+    .col-2{
+        width:33.333333333333333333333333333333%;
+    }
+
+    .col-3{
+        width: 50%;
+    }
+
+    .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+        width: 100%;
+    }
+}
